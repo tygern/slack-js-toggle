@@ -1,0 +1,42 @@
+{
+  "name": "Slack JS toggle",
+  "description": "Adds a button to the browser to toggle javascript in Slack",
+  "version": "1.0.0",
+  "icons": {
+    "16": "images/slack16.png",
+    "24": "images/slack24.png",
+    "32": "images/slack32.png",
+    "48": "images/slack48.png",
+    "128": "images/slack48.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "permissions": [
+    "contentSettings",
+    "tabs",
+    "*://*.slack.com/*"
+  ],
+  "browser_action": {
+    "default_title": "Slack JS toggle",
+    "default_icon": {
+      "16": "images/slack16.png",
+      "24": "images/slack24.png",
+      "32": "images/slack32.png"
+    }
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "windows": "Ctrl+Shift+K",
+        "mac": "Command+Shift+K",
+        "chromeos": "Ctrl+Shift+K",
+        "linux": "Ctrl+Shift+K"
+      }
+    }
+  },
+  "manifest_version": 2
+}
